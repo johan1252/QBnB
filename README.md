@@ -38,11 +38,17 @@ MySQL Database Application
 ### Running the web application using XAMPP
 1. Launch XAMPP
 2. Ensure "MySQL Database" and "Apache Web Server" server's are started. If not, start both servers now.
-3. Clone this repository "QBnB" into <xamppApplicationFolder>/htdocs/
+3. Clone this repository "QBnB" into xamppApplicationFolder/htdocs/
 	1. Use "git clone <git clone url from github>"
 4. Launch your favourite web browser and go to "http://localhost:8080/QBnB/"
 5. Voilà! You are now running a local version of the web application.
-	1. Any changes made to files in <xamppApplicationFolder>/htdocs/ should be reflected at "http://localhost:8080/QBnB/"
+	1. Any changes made to files in xamppApplicationFolder/htdocs/ should be reflected at "http://localhost:8080/QBnB/"
+
+## Authors
+
+* Ryan Dick
+* Maytha Nassor
+* Johan Cornelissen
 
 ## Screenshots
 
@@ -65,10 +71,4 @@ My Bookings Page:
 User Configuration Page:
 
 ![alt text](https://github.com/johan1252/QBnB/blob/master/Screenshots/Screenshot_User.png?raw=true)
-
-## Authors
-
-* Ryan Dick
-* Maytha Nassor
-* Johan Cornelissen
 
