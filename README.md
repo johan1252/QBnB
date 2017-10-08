@@ -38,7 +38,7 @@ MySQL Database Application
 ### Running the web application using Docker
 1. Launch terminal with docker installed (if not installed follow https://docs.docker.com/engine/installation/)
 2. Clone this repository "QBnB" in a empty directory of your choice.
-	1. Use "git clone <git clone url from github>"
+	1. Use "git clone \<git clone url from github\>"
 3. Change directory to you directory created by the above clone command.
 ```
 cd <directory>/QBnB
@@ -55,7 +55,7 @@ docker-compose up -d
 1. Launch XAMPP
 2. Ensure "MySQL Database" and "Apache Web Server" server's are started. If not, start both servers now.
 3. Clone this repository "QBnB" into xamppApplicationFolder/htdocs/
-	1. Use "git clone <git clone url from github>"
+	1. Use "git clone \<git clone url from github\>"
 4. Launch your favourite web browser and go to "http://localhost:8080/QBnB/"
 5. Voilà! You are now running a local version of the web application.
 	1. Any changes made to files in xamppApplicationFolder/htdocs/ should be reflected at "http://localhost:8080/QBnB/"
