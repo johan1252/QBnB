@@ -1,0 +1,29 @@
+# docker-compose.yml
+
+mysql_server:
+  image: mysql
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./Docker_Sql/:/var/lib/mysql 
+  environment:  
+    - "MYSQL_ROOT_PASSWORD=0000" 
+
+phpMyAdmin_server:
+  image: phpmyadmin/phpmyadmin
+  ports:
+    - "9090:80"
+  links:
+    - mysql_server:db
+
+apache_server:
+  image: nimmis/apache-php5
+  ports:
+    - "80:80"
+  volumes:
+    - .:/var/www/html
+  links:
+    - mysql_server:db
+  environment:
+    - "INSIDE_DOCKER=TRUE"
+

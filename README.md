@@ -35,6 +35,22 @@ Web Hosting or Local Web Server such as XAMPP
 MySQL Database Application
 ```
 
+### Running the web application using Docker
+1. Launch terminal with docker installed (if not installed follow https://docs.docker.com/engine/installation/)
+2. Clone this repository "QBnB" in a empty directory of your choice.
+	1. Use "git clone <git clone url from github>"
+3. Change directory to you directory created by the above clone command.
+```
+cd <directory>/QBnB
+```
+4. Launch the docker containers using the following:
+```
+docker-compose up -d
+```
+5. If the above command was successful, you are up and running! Now phpMyAdmin, MySql and Apache web server are all running.
+6. View the webapp at http://localhost:80 or view PhpMyAdmin at http://localhost:9090
+   1. To kill the instance, use "docker-compose down"
+
 ### Running the web application using XAMPP
 1. Launch XAMPP
 2. Ensure "MySQL Database" and "Apache Web Server" server's are started. If not, start both servers now.
