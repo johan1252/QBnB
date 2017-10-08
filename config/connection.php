@@ -1,6 +1,20 @@
 <?php
 // used to connect to the database
-$host = "localhost";
+
+//$host = "localhost";
+//$host = "127.0.0.1";
+
+if (file_exists('/var/www/html/index.php'))
+{
+	// Docker mySQL Container IP
+	$host = "172.17.0.2";
+}
+else
+{
+	// XAMPP MYSQL IP, or 127.0.0.1
+	$host = "localhost";
+}
+
 $db_name = "QBnB";
 $username = "cisc332";
 $password = "cisc332password";
